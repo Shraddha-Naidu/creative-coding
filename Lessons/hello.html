@@ -16,7 +16,16 @@
     let context = canvas.getContext('2d');
 
     //The following will set up a rectangle in the canvas
-    //The numbers indicate right and down movement(first two indicate starting      position, following two indicate size)
+    //The numbers indicate right and down movement(first two indicate starting position, following two indicate size)
+
+    context.fillStyle = 'purple';
+    context.fillRect(100, 100, 400, 400);//Creates shape and fills with colour - black is standard.
+
+    context.lineWidth = 4;
+    context.beginPath();
+    context.rect(100, 100, 400, 400);// Draws a rectangle outline
+    contect.stroke();
+
 
     //Variable - is a reference to a value.
     //Variables are referenced in script to store data or text, so that it can be referenced without being typed constantly
